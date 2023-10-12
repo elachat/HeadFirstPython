@@ -9,7 +9,7 @@ app.secret_key = "You will never guess..."
 def index():
     return render_template(
         "index.html",
-        title="‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵Welcome to Swimclub ‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿",
+        title="‿︵‿︵‿︵‿︵‿︵‿︵Welcome to Swimclub ‿︵‿︵‿︵‿︵‿︵‿︵‿",
     )
 
 def populate_data():
@@ -45,7 +45,7 @@ def display_swimmer_files():
     name = request.form["swimmer"]
     return render_template(
         "select.html",
-        title="Select An Event",
+        title="Choose Your Battle!",
         url="/showbarchart",
         select_id="file",
         data=session["swimmers"][name],

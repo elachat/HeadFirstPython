@@ -52,9 +52,10 @@ def produce_bar_chart(fn, location=CHARTS):
     <html>
         <head>
             <title>{title}</title>
+            <link rel="stylesheet" href="../static/webapp.css"/>
         </head>
         <body>
-            <h3>{title}</h3>
+            <h2>{title}</h2>
     """
     body = ""
 
